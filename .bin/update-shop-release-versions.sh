@@ -3,6 +3,7 @@
 set -e
 set -x
 
+find . -type f -name "new-shop-releases.txt"
 # update compatible-shop-releases.txt if there was a release and we are compatible
 if [[ ${COMPATIBILITY_CHECK}  == "1" ]]; then
     cp ${SHOPWARE_COMPATIBILITY_FILE} ${SHOPWARE_RELEASES_FILE}
