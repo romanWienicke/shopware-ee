@@ -27,7 +27,7 @@ env:
     - PATCH_RELEASE="patch"
     - MINOR_RELEASE="minor"
     - MAJOR_RELEASE="major"
-    - SHOPWARE_COMPATIBILITY_FILE=${TRAVIS_BUILD_DIR}/.bin/new-shop-releases.txt
+    - SHOPWARE_COMPATIBILITY_FILE=./.bin/new-shop-releases.txt
 
 matrix:
   allow_failures:
