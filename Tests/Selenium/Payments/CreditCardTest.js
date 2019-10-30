@@ -34,16 +34,6 @@ describe('Credit Card test', () => {
     it('should check the credit card payment process', async () => {
         await updateDatabaseTransactionType('pay', 'wirecardElasticEngineCreditCardTransactionType');
         await loginWithExampleAccount(driver);
-        await addProductToCartAndGotoCheckout(driver, '/genusswelten/tees-und-zubeh/tee-zubehoer/24/glas-teekaennchen');
-        await selectPaymentMethod(driver, paymentLabel);
-
-        // Save card
-        console.log('click #wirecardee--save-token');
-        await driver.findElement(By.id('wirecardee--save-token')).click();
-
-        // Confirm order
-        console.log('click button confirm--form');
-        await driver.findElement(By.xpath('//button[@form="confirm--form"]')).click();
 
         // Fill out credit card iframe
         console.log('wait for .wirecard-seamless-frame');
