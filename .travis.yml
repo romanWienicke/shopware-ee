@@ -21,7 +21,7 @@ env:
     - COMPOSER_ARGS="--no-interaction"
     - PLUGIN_NAME=WirecardElasticEngine
     - SHOPWARE_DIRECTORY=${HOME}/shopware
-    - SHOPWARE_RELEASES_FILE=${TRAVIS_BUILD_DIR}/.bin/compatible-shop-releases.txt
+    - SHOPWARE_RELEASES_FILE=./.bin/compatible-shop-releases.txt
     - SHOP_SYSTEM_UPDATE_COMMIT="Update latest shop releases"
     - MANUAL_UITEST_TRIGGER_COMMIT="Test my build"
     - PATCH_RELEASE="patch"
